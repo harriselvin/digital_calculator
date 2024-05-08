@@ -1,0 +1,145 @@
+.container {
+    margin: 0 37%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(black, lightgrey, grey, black);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    flex-wrap: wrap;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.title input {
+    background-color: lightgray;
+    height: 40px;
+    width: 50px;
+    margin: -1px;
+}
+
+.input-top .top1 {
+    border-radius: 5px 0 0 5px;
+}
+
+.input-top .top3 {
+    border-radius: 0 5px 5px 0;
+}
+
+.input-sec .textArea {
+    height: 100px;
+    width: 310px;
+    padding: 50px 30px 0 30px;
+    border-radius: 10px;
+    background-color: rgb(219, 219, 248);
+    font-size: 50px;
+    text-align: right;
+    transition: .8s;
+    border: 1px solid black;
+}
+
+.textArea .value {
+    animation: calculate 1s ease infinite;
+}
+
+@keyframes calculate {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.settings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.settings p {
+    padding: 5px 10px;
+}
+
+.settings #dropdown {
+    height: 30px;
+    width: 40px;
+    margin-top: 15px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 10%;
+}
+
+.settings #dropdown:hover {
+    background-color: rgb(191, 184, 184);
+    border-radius: 10%;
+    color: black;
+}
+
+.settings p:hover {
+    scale: 1.1;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: rgb(191, 184, 184);
+    border-radius: 10%;
+}
+
+.settings p:active {
+    opacity: .5;
+}
+
+table tr {
+    background-color: white;
+}
+
+table tr, td {
+    padding: 20px 36px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+table:hover {
+    cursor: pointer;
+}
+
+table td:hover {
+    scale: 1.05;
+    background-color: rgb(219, 219, 248);
+}
+
+table td:active {
+    background-color: rgb(185, 185, 227);
+}
+
+.back {
+    background-color: rgb(159, 150, 150);
+}
+
+.back:hover {
+    background-color: lightgrey;
+}
+
+.equal {
+    background-color: rgb(48, 95, 225, .8);
+    color: white;
+}
+
+.equal:hover {
+    background-color: rgb(48, 95, 225);
+}
+
+.equal:active {
+    background-color: rgb(48, 95, 225, .8);
+}
+
+.divide {
+    padding: 1px;
+}
