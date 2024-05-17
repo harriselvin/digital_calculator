@@ -47,7 +47,7 @@
     border: 1px solid black;
 }
 
-.textArea .value {
+.textArea .result {
     animation: calculate 1s ease infinite;
 }
 
@@ -96,11 +96,12 @@
     opacity: .5;
 }
 
-table tr {
-    background-color: white;
+table button {
+    height: 50px;
+    width: 90px;
 }
 
-table tr, td {
+table tr, button {
     padding: 20px 36px;
     border: 1px solid black;
     border-radius: 10%;
@@ -110,12 +111,12 @@ table:hover {
     cursor: pointer;
 }
 
-table td:hover {
+table button:hover {
     scale: 1.05;
     background-color: rgb(219, 219, 248);
 }
 
-table td:active {
+table button:active {
     background-color: rgb(185, 185, 227);
 }
 
@@ -142,4 +143,69 @@ table td:active {
 
 .divide {
     padding: 1px;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 301px) {
+    .container {
+        margin: 0 5%;
+        padding: 5px;
+    }
+
+    .input-sec .textArea {
+        height: 100px;
+        width: 278px;
+        padding: 50px 30px 0 30px;
+        border-radius: 10px;
+        background-color: rgb(219, 219, 248);
+        font-size: 50px;
+        text-align: right;
+        transition: .8s;
+        border: 1px solid black;
+    }
+
+    table button {
+        height: 50px;
+        width: 80px;
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .container {
+        margin: 0 5%;
+        padding: 5px;
+    }
+
+    .input-top .top1 {
+        width: 20px;
+        height: 30px;
+    }
+
+    .input-top .top2 {
+        width: 20px;
+        height: 30px;
+    }
+    
+    .input-top .top3 {
+        width: 20px;
+        height: 30px;
+    }
+
+    .input-sec .textArea {
+        height: 100px;
+        width: 180px;
+        padding: 50px 30px 0 30px;
+        border-radius: 10px;
+        background-color: rgb(219, 219, 248);
+        font-size: 50px;
+        text-align: right;
+        transition: .8s;
+        border: 1px solid black;
+    }
+
+    table button {
+        height: 50px;
+        width: 70px;
+    }
+    
 }
