@@ -22,8 +22,6 @@ function Equal() {
         let answer = eval(result.innerText)
         result.innerText = answer
     }
-
-    
 }
 
 // Function for backspace
