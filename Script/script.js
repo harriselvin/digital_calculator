@@ -15,8 +15,12 @@ let equal = document.getElementsByClassName('equal')[0]
 equal.addEventListener('click', Equal)
 
 function Equal() {
-    if (result.innerText === "") {
-        result.innerText = ""
+    if (result.innerText === "" || result.innerText == eval(result.innerText)) {
+        result.innerText = "Error"
+    } else if (result.innerText === "Error") {
+        result.innerText = "Please click on clear"
+    } else if (result.innerText === "Error" || result.innerText === "Please click on clear") {
+        numbers.value = numbers.value.disabled()
     } else {
         console.log(result.innerText)
         let answer = eval(result.innerText)
@@ -48,10 +52,9 @@ numbers.forEach(number => {
     })
 })
 
-// addition.addEventListener('click', Add)
-
-// Function that add
-function Add() {
+try {
+    (numbers.value === "" )
+} catch (error) {
     
 }
 
