@@ -16,11 +16,7 @@ equal.addEventListener('click', Equal)
 
 function Equal() {
     if (result.innerText === "" || result.innerText == eval(result.innerText)) {
-        result.innerText = "Error"
-    } else if (result.innerText === "Error") {
-        result.innerText = "Please click on clear"
-    } else if (result.innerText === "Error" || result.innerText === "Please click on clear") {
-        numbers.value = numbers.value.disabled()
+        result.innerText = 0
     } else {
         console.log(result.innerText)
         let answer = eval(result.innerText)
@@ -45,16 +41,12 @@ function Clear() {
     result.innerText = ""
 }
 
+
+
 // Method that selects all values
 numbers.forEach(number => {
     number.addEventListener('click', function() {
         result.innerText += number.value
     })
 })
-
-try {
-    (numbers.value === "" )
-} catch (error) {
-    
-}
 

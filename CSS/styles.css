@@ -96,15 +96,11 @@
     opacity: .5;
 }
 
-table button {
-    height: 50px;
-    width: 90px;
-}
-
 table tr, button {
-    padding: 20px 36px;
     border: 1px solid black;
     border-radius: 10%;
+    height: 50px;
+    width: 90px;
 }
 
 table:hover {
@@ -145,7 +141,7 @@ table button:active {
     padding: 1px;
 }
 
-@media only screen and (max-width: 430px) and (min-width: 301px) {
+@media only screen and (max-width: 500px) and (min-width: 301px) {
     .container {
         margin: 0 1%;
         padding: 5px;
@@ -166,12 +162,12 @@ table button:active {
 
     table tr button {
         height: 50px;
-        width: 30px;
+        width: 73px;
     }
     
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 300px) and (min-width: 200px) {
     .container {
         margin: 0 5%;
         padding: 5px;
@@ -194,19 +190,33 @@ table button:active {
 
     .input-sec .textArea {
         height: 100px;
-        width: 180px;
-        padding: 50px 30px 0 30px;
-        border-radius: 10px;
-        background-color: rgb(219, 219, 248);
-        font-size: 50px;
-        text-align: right;
-        transition: .8s;
-        border: 1px solid black;
+        width: 160px;
+        font-size: 40px;
+    }
+
+    .settings {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .settings p {
+        padding: 5px 5px;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    
+    .settings #dropdown {
+        height: 30px;
+        width: 40px;
+        margin-top: 15px;
+        font-size: 10px;
     }
 
     table button {
         height: 50px;
-        width: 40px;
+        width: 52px;
+        font-size: 10px;
     }
     
 }
