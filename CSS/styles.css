@@ -49,6 +49,7 @@
 
 .textArea .result {
     animation: calculate 1s ease infinite;
+    overflow: hidden;
 }
 
 @keyframes calculate {
